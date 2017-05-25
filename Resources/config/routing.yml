@@ -1,0 +1,8 @@
+rating_vote:
+    path: /{type}/{id}/{vote}
+    defaults:
+        _controller: RatingBundle:Rating:vote
+    requirements:
+        type: \w+
+        id: \d+
+        vote: \d+
